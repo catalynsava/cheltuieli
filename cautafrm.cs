@@ -142,7 +142,6 @@ namespace cheltuieli
 			
 			sqlsel+=" ORDER BY t.DENUMIRE;";
 			
-			//Debug.Print(sqlsel);
 			Global.sqllista=sqlsel;
 			Global.SetSetting("sql",sqlsel);
 			Global.frmruleaza.incarcalistbox(Global.sqllista,"","");

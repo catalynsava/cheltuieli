@@ -399,6 +399,6 @@
  total                         6342,800000000001 lei. 
                       cheltuieli : septembrie / 2020. 
 
- venituri:                               3390,49 lei. 
+ venituri:                               5589,49 lei. 
  cheltuieli:                             2952,31 lei. 
- venituri-cheltuieli:                     438,18 lei. 
+ venituri-cheltuieli:                    2637,18 lei. 
