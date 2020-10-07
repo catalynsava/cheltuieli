@@ -9,12 +9,16 @@
  stroghold.pisică.PRT  1x3pi/134,33lei    134,33 lei. 
  TOTAL PETMART                            267,35 lei. 
 
+ cabl.tv.inte.RDS      FDB20 27071679      61,00 lei. 
+ abonment.tel.mob.RDS  FDB20 27040746      10,00 lei. 
+ TOTAL RCS-RDS                             71,00 lei. 
+
  win10+offic.2019.REX  1pac/79lei          79,00 lei. 
  TOTAL REX SOFTWARE                        79,00 lei. 
 
- TOTAL 06.10.2020                         363,92 lei. 
+ TOTAL 06.10.2020                         434,92 lei. 
 -----------------                                            
- total                                    363,92 lei. 
+ total                                    434,92 lei. 
                        cheltuieli : octombrie / 2020. 
- cheltuieli:                              363,92 lei. 
- venituri-cheltuieli:                    -363,92 lei. 
+ cheltuieli:                              434,92 lei. 
+ venituri-cheltuieli:                    -434,92 lei. 

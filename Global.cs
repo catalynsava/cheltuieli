@@ -12,21 +12,13 @@ namespace cheltuieli
         static string _ancheltuieli="";
 		static string _lunacheltuieli="";
 		static string _zicheltuieli="";
-		
 		static string _user = "";
 		static string _password= "";
 		static string _id="";
-		//static string _sqllista="SELECT a.ID, a.PRIORITATE, a.DENUMIRE, a.MAGAZIN, a.SCURT, a.DESCRIERE, a.VALOARE, a.NEVOIE, a.PERIOADA, a.DATA, a.ACTIV, a.O FROM lista a ORDER BY a.PRIORITATE, a.DENUMIRE, a.VALOARE;";
-		
-        //static string _sqllista="";
         static string _sqllista=Global.GetSetting("sql");
-		
 		static string _eroare="";
-		
 		static bool _conectat=false;
-		
 		public static frmCheltuieli frmruleaza;
-		
 		public static SQLiteConnection cnn;
 		public static SQLiteTransaction tranzactie;
 		public static SQLiteCommand cmd;
@@ -115,7 +107,6 @@ namespace cheltuieli
 				using(Global.cmd=new SQLiteCommand()){
 					Global.cmd.Connection=Global.cnn;
 					Global.cmd.CommandText="SELECT sql FROM main.sqlite_master WHERE name='" + tablename + "';";
-					//Debug.Print("SELECT sql FROM main.sqlite_master WHERE name='" + tablename + "';");
 					using(Global.dr=Global.cmd.ExecuteReader()){
 						Global.dr.Read();
 						
@@ -201,11 +192,8 @@ namespace cheltuieli
 		{
 			Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-			//make changes
 			config.AppSettings.Settings[key].Value = value;
 			
-			
-			//save to apply changes
 			config.Save(ConfigurationSaveMode.Modified);
 			ConfigurationManager.RefreshSection("appSettings");
 			
