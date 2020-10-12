@@ -419,7 +419,7 @@ namespace cheltuieli
 			
 			try{
 				
-				sqlsel = "SELECT sum(cheltuieli.valoare) as total FROM cheltuieli";
+				sqlsel = "SELECT ROUND(sum(cheltuieli.valoare),2) as total FROM cheltuieli";
 				sqlsel += wheresql1;
 				sqlsel += wheresql2;
 				//Debug.Print(sqlsel);
@@ -454,7 +454,7 @@ namespace cheltuieli
 			double totalvenituridouble=0;
 			double totalcheltuielidouble=0;
 			try{
-				sqlsel="SELECT cheltuieli.SEMN, sum(cheltuieli.valoare) as total FROM cheltuieli";
+				sqlsel="SELECT cheltuieli.SEMN, ROUND(sum(cheltuieli.valoare),2) as total FROM cheltuieli";
 				groupby=" GROUP BY cheltuieli.SEMN;";
 				wheresql2=" AND " + 
 							"cheltuieli.SEMN='+'";
@@ -1418,7 +1418,7 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT SUM(VALOARE) AS TOT FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='5. an' AND lista.ACTIV=1;";
-		//Debug.Print(sqlsel);
+		Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1439,8 +1439,6 @@ namespace cheltuieli
 			Debug.Print("GetType:"+err.GetType().Name+"\r\n Source:"+ err.Source + "\r\n Message:" + err.Message + "\r\n StackTrace:" + err.StackTrace);
 			Global.tranzactie.Rollback();
 		}
-
-		
 		return strreturn;
 	}
 	void autocomplet()
