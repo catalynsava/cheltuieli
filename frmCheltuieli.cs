@@ -19,13 +19,13 @@ namespace cheltuieli
 		int ptnrzile;
 		int nrsaptamani;
 	
-		double totalzi;
-		double totallunadinzi;
-		double totallunadin3zile;
-		double totalsaptamana;
-		double totallunadinsaptamana;
-		double totalluna;
-		double totalocazional;
+		decimal totalzi;
+		decimal totallunadinzi;
+		decimal totallunadin3zile;
+		decimal totalsaptamana;
+		decimal totallunadinsaptamana;
+		decimal totalluna;
+		decimal totalocazional;
 	
       
 	public frmCheltuieli(){
@@ -360,14 +360,14 @@ namespace cheltuieli
 			
 			sqlsel += " UNION ALL";
 			
-			sqlsel += " SELECT 1 AS ORDINE, '', 'TOTAL', MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, SUM(cheltuieli.VALOARE), '' FROM cheltuieli";
+			sqlsel += " SELECT 1 AS ORDINE, '', 'TOTAL', MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.VALOARE),2), '' FROM cheltuieli";
 			sqlsel += wheresql1;
 			sqlsel += wheresql2;
 			sqlsel += groupby;
 			
 			sqlsel += " UNION ALL";
 			
-			sqlsel += " SELECT 2 AS ORDINE, '', 'TOTAL', 'ZZZ' AS MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, SUM(cheltuieli.VALOARE), '' FROM cheltuieli";
+			sqlsel += " SELECT 2 AS ORDINE, '', 'TOTAL', 'ZZZ' AS MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.VALOARE),2), '' FROM cheltuieli";
 			sqlsel += wheresql1;
 			sqlsel += wheresql2;
 			sqlsel += groupby2;
@@ -419,7 +419,7 @@ namespace cheltuieli
 			
 			try{
 				
-				sqlsel = "SELECT ROUND(sum(cheltuieli.valoare),2) as total FROM cheltuieli";
+				sqlsel = "SELECT ROUND(SUM(cheltuieli.valoare),2) as total FROM cheltuieli";
 				sqlsel += wheresql1;
 				sqlsel += wheresql2;
 				//Debug.Print(sqlsel);
@@ -451,10 +451,10 @@ namespace cheltuieli
 			
 			
 			//---------------------------------------------------------------------/
-			double totalvenituridouble=0;
-			double totalcheltuielidouble=0;
+			decimal totalvenituridouble=0;
+			decimal totalcheltuielidouble=0;
 			try{
-				sqlsel="SELECT cheltuieli.SEMN, ROUND(sum(cheltuieli.valoare),2) as total FROM cheltuieli";
+				sqlsel="SELECT cheltuieli.SEMN, ROUND(SUM(cheltuieli.valoare),2) as total FROM cheltuieli";
 				groupby=" GROUP BY cheltuieli.SEMN;";
 				wheresql2=" AND " + 
 							"cheltuieli.SEMN='+'";
@@ -471,12 +471,12 @@ namespace cheltuieli
 						using(Global.dr=Global.cmd.ExecuteReader()){
 							while(Global.dr.Read()){
 								if(Global.dr["SEMN"].ToString()=="+"){
-									totalvenituridouble=Convert.ToDouble(Global.dr["total"].ToString());
+									totalvenituridouble=Convert.ToDecimal(Global.dr["total"].ToString());
 									//totalvenituridouble=Math.Round(totalvenituridouble, 2);
 									strcheltuieli+= "\r\n " + "venituri:".ToString().PadRight(27) + totalvenituridouble.ToString("0.00").PadLeft(20) + " lei. \r\n";
 								}
 								if(Global.dr["SEMN"].ToString()=="-"){
-									totalcheltuielidouble=Convert.ToDouble(Global.dr["TOTAL"].ToString());
+									totalcheltuielidouble=Convert.ToDecimal(Global.dr["TOTAL"].ToString());
 									//totalcheltuielidouble=Math.Round(totalcheltuielidouble, 2);
 									strcheltuieli+= " " + "cheltuieli:".ToString().PadRight(27) + totalcheltuielidouble.ToString("0.00").PadLeft(20) + " lei. \r\n";
 								}
@@ -1108,7 +1108,7 @@ namespace cheltuieli
 		//'double dblResult=0;
 		string strreturn;
 		string sqlsel;
-		double totalLunaDen=0;
+		decimal totalLunaDen=0;
 
 		//prioritate 1 perioadă zi
 		strreturn = prior + ".--------------------------------\r\n";
@@ -1122,8 +1122,8 @@ namespace cheltuieli
 					using(Global.dr=Global.cmd.ExecuteReader()){
 						strreturn = strreturn + "zilnice: \r\n";
 						while (Global.dr.Read()){
-							totalLunaDen=ptnrzile * Double.Parse(Global.dr["VALOARE"].ToString());
-							strreturn+= " " + Global.dr["DENUMIRE"].ToString().PadRight(20) + string.Format("{0:0.00}", double.Parse(Global.dr["VALOARE"].ToString())).PadLeft(7);
+							totalLunaDen=ptnrzile * decimal.Parse(Global.dr["VALOARE"].ToString());
+							strreturn+= " " + Global.dr["DENUMIRE"].ToString().PadRight(20) + string.Format("{0:0.00}", decimal.Parse(Global.dr["VALOARE"].ToString())).PadLeft(7);
 							strreturn+= " " + "lei. lună: " + string.Format("{0:0.00}", (totalLunaDen)).PadLeft(7)  + " lei. \r\n";
 						}
 						Global.dr.Close();
@@ -1137,7 +1137,7 @@ namespace cheltuieli
 			Global.tranzactie.Rollback();
 		}
 		
-		sqlsel = "SELECT SUM(VALOARE) as TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='1. zi';";
+		sqlsel = "SELECT ROUND(SUM(VALOARE),2) as TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='1. zi';";
 		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
@@ -1150,7 +1150,7 @@ namespace cheltuieli
 						if (string.IsNullOrEmpty(Global.dr[0].ToString())){
 							totalzi = 0;
 						}else{
-							totalzi = double.Parse(Global.dr[0].ToString());
+							totalzi = decimal.Parse(Global.dr[0].ToString());
 						}
 								
 						totallunadinzi= ptnrzile*totalzi;
@@ -1179,8 +1179,8 @@ namespace cheltuieli
 					using(Global.dr=Global.cmd.ExecuteReader()){
 						strreturn = strreturn + "2 - 3 zile: \r\n";
 						while (Global.dr.Read()){
-							totalLunaDen=(ptnrzile/3)*double.Parse(Global.dr["VALOARE"].ToString());
-							strreturn+= " " + Global.dr["DENUMIRE"].ToString().PadRight(20) + string.Format("{0:0.00}", double.Parse(Global.dr["VALOARE"].ToString())).PadLeft(7);
+							totalLunaDen=(ptnrzile/3)*decimal.Parse(Global.dr["VALOARE"].ToString());
+							strreturn+= " " + Global.dr["DENUMIRE"].ToString().PadRight(20) + string.Format("{0:0.00}", decimal.Parse(Global.dr["VALOARE"].ToString())).PadLeft(7);
 							strreturn+= " " + "lei. lună: " + string.Format("{0:0.00}", (totalLunaDen)).PadLeft(7)  + " lei. \r\n";
 						}
 						Global.dr.Close();
@@ -1194,7 +1194,7 @@ namespace cheltuieli
 			Global.tranzactie.Rollback();
 		}
 		
-		sqlsel = "SELECT SUM(VALOARE) AS TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='2. 3 zile';";
+		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='2. 3 zile';";
 		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
@@ -1207,7 +1207,7 @@ namespace cheltuieli
 						if (string.IsNullOrEmpty(Global.dr[0].ToString())){
 							totalzi = 0;
 						}else{
-							totalzi = double.Parse(Global.dr[0].ToString());
+							totalzi = decimal.Parse(Global.dr[0].ToString());
 						}
 								
 						totallunadin3zile= ptnrzile/3*totalzi;
@@ -1236,7 +1236,7 @@ namespace cheltuieli
 					using(Global.dr=Global.cmd.ExecuteReader()){
 						strreturn = strreturn + "săptămânale: \r\n";
 						while (Global.dr.Read()){
-							totalLunaDen=nrsaptamani*double.Parse(Global.dr["VALOARE"].ToString());
+							totalLunaDen=nrsaptamani*decimal.Parse(Global.dr["VALOARE"].ToString());
 							strreturn+= " " + Global.dr["DENUMIRE"].ToString().PadRight(20) + string.Format("{0:0.00}",Global.dr["VALOARE"]).PadLeft(7);
 							strreturn+= " " + "lei. lună: " + string.Format("{0:0.00}", (totalLunaDen)).PadLeft(7)  + " lei. \r\n";
 						}
@@ -1251,7 +1251,7 @@ namespace cheltuieli
 			Global.tranzactie.Rollback();
 		}
 		
-		sqlsel = "SELECT SUM(VALOARE) AS TOT FROM lista WHERE PRIORITATE='" + prior + "' AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='3. săptămână';";
+		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE PRIORITATE='" + prior + "' AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='3. săptămână';";
 		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
@@ -1264,7 +1264,7 @@ namespace cheltuieli
 						if (string.IsNullOrEmpty(Global.dr[0].ToString())){
 							totalsaptamana = 0;
 						}else{
-							totalsaptamana = double.Parse(Global.dr[0].ToString());
+							totalsaptamana = decimal.Parse(Global.dr[0].ToString());
 						}
 						totallunadinsaptamana = nrsaptamani * totalsaptamana;
 									
@@ -1306,7 +1306,7 @@ namespace cheltuieli
 			Global.tranzactie.Rollback();
 		}
 		
-		sqlsel = "SELECT SUM(VALOARE) AS TOT FROM lista WHERE PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='4. lună' AND lista.ACTIV=1;";
+		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='4. lună' AND lista.ACTIV=1;";
 		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
@@ -1319,7 +1319,7 @@ namespace cheltuieli
 						if (string.IsNullOrEmpty(Global.dr[0].ToString())){
 							totalluna = 0;
 						}else{
-							totalluna = double.Parse(Global.dr[0].ToString());
+							totalluna = decimal.Parse(Global.dr[0].ToString());
 						}
 						strreturn = strreturn + "  " + "total/lună".PadRight(20) + string.Format("{0:0.00}",totalluna).PadLeft(7) + " lei. \r\n";
 						//#####################################################################
@@ -1358,7 +1358,7 @@ namespace cheltuieli
 			Global.tranzactie.Rollback();
 		}
 		
-		sqlsel = "SELECT SUM(VALOARE) AS TOT FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='6. ocazional' AND lista.ACTIV=1;";
+		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='6. ocazional' AND lista.ACTIV=1;";
 		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
@@ -1371,7 +1371,7 @@ namespace cheltuieli
 						if (string.IsNullOrEmpty(Global.dr[0].ToString())){
 							totalocazional = 0;
 						}else{
-							totalocazional = double.Parse(Global.dr[0].ToString());
+							totalocazional = decimal.Parse(Global.dr[0].ToString());
 						}
 						strreturn = strreturn + "  " + "total/ocazional".PadRight(20) + string.Format("{0:0.00}",totalocazional).PadLeft(7) + " lei. \r\n";
 						//#####################################################################
@@ -1387,7 +1387,7 @@ namespace cheltuieli
 		}
 		//###########################################################################################
 		//#################################  tot general lună  ######################################
-		double totalgeneral = 0;
+		decimal totalgeneral = 0;
 		totalgeneral = totallunadinzi + totallunadin3zile + totallunadinsaptamana + totalluna+totalocazional;
 				
 		strreturn = strreturn + "total lunar general: \r\n";
@@ -1417,7 +1417,7 @@ namespace cheltuieli
 			Global.tranzactie.Rollback();
 		}
 		
-		sqlsel = "SELECT SUM(VALOARE) AS TOT FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='5. an' AND lista.ACTIV=1;";
+		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='5. an' AND lista.ACTIV=1;";
 		Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
