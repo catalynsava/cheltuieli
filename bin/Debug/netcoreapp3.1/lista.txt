@@ -67,9 +67,88 @@
 
  TOTAL 11.10.2020                          14,00 lei. 
 -----------------                                            
- total                                   1178,85 lei. 
+ cartofi.piure.LDL     1x2kg/5,59lei        5,59 lei. 
+ sare.mare.iod.LDL     1buc/1,99lei         1,99 lei. 
+ sare.mare.iod.LDL     1buc/1,99lei         1,99 lei. 
+ prosop.bucătărie.LDL  1x4sul/5,89lei       5,89 lei. 
+ ouă.30.m.sol.LDL      1X30/12,99          12,99 lei. 
+ TOTAL LIDL                                28,45 lei. 
+
+ TOTAL 15.10.2020                          28,45 lei. 
+-----------------                                            
+ foarfec.CNA           1bic/15lei          15,00 lei. 
+ castron.rabatabi.CNA  1buc/10lei          10,00 lei. 
+ TOTAL CHINEZI KLK                         25,00 lei. 
+
+ lanternă.DOD          1buc/82lei          82,00 lei. 
+ TOTAL DIODA                               82,00 lei. 
+
+ prosop.bucătărie.MTR  1buc/7,04           14,08 lei. 
+ cârnați.popu.aro.MTR  1kg/12,47lei        19,10 lei. 
+ pulpe.pui.5kg.MTR     1cutie/24,69        24,69 lei. 
+ oțet.aliment.vin.MTR  1buc/3,1lei         18,57 lei. 
+ sărățele.chimen.MTR   1buc/2,6lei          6,18 lei. 
+ cartofi.albi.ola.MTR  1x10kg/14,49lei     14,49 lei. 
+ TOTAL METRO                               97,11 lei. 
+
+ parcare               1oră/1,5lei          1,00 lei. 
+ parcare               1oră/1,5lei          1,00 lei. 
+ TOTAL PARKING SA                           2,00 lei. 
+
+ ardei.iuți.PAȚ        1kg/10lei           20,00 lei. 
+ TOTAL PIAȚA MARE                          20,00 lei. 
+
+ felix.fantastic.ZOO   1plic/1,85lei       18,50 lei. 
+ haină.pet.expert.ZOO  1buc/47,91lei       47,91 lei. 
+ haină.crazy.live.ZOO  1buc/34,95lei       34,95 lei. 
+ sacosă.ecotaxă.ZOO    1buc/0,82            0,82 lei. 
+ TOTAL ZOO CENTER                         102,18 lei. 
+
+ TOTAL 17.10.2020                         328,29 lei. 
+-----------------                                            
+ pate.pisici.KLK       1x100g/0,99lei       4,95 lei. 
+ gourmet.pate.KLK      1buc/2,65lei         5,30 lei. 
+ ouă.30.proasp.KLK     1x30buc/9,99lei      9,99 lei. 
+ sare.iodată.fină.KLK  1buc1,90lei          3,80 lei. 
+ ceapă.bio.750g.KLK    1x750g/5,99lei       5,99 lei. 
+ fasole.albă.mare.KLK  1kg/8,99lei          9,12 lei. 
+ ardei.iute..KLK       1kg/6,99lei          8,07 lei. 
+ pungă.biodegrada.KLK  1buc/0,10lei         0,10 lei. 
+ pungă.biodegrada.KLK  1buc/0,10lei         0,10 lei. 
+ TOTAL KAUFLAND                            47,42 lei. 
+
+ motorină.extr.PTR     1litru/4,65lei      86,77 lei. 
+ spăl.ext.auto.PTR     1buc/22,98lei+b     25,98 lei. 
+ TOTAL PETROM                             112,75 lei. 
+
+ TOTAL 18.10.2020                         160,17 lei. 
+-----------------                                            
+ sacoșă.mică.PNY       1buc/0,59lei         0,59 lei. 
+ bere.timișoreana.PNY  1x2,25l/7,29lei      7,29 lei. 
+ fulgi.porumb.PNY      1buc/3,89lei         3,89 lei. 
+ fulgi.porumb.PNY      1buc/3,89lei         3,89 lei. 
+ semințe.negre.să.PNY  1buc/4,69lei         4,69 lei. 
+ semințe.dovleac.PNY   1buc/12,49lei       12,49 lei. 
+ mere.golden.vrac.PNY  1kg/2,49lei          2,40 lei. 
+ struguti.roze.ne.PNY  1kg/5,49lei          4,73 lei. 
+ TOTAL PENNY                               39,97 lei. 
+
+ TOTAL 19.10.2020                         189,97 lei. 
+-----------------                                            
+ fond.reparații.TRȚ    1rată/50lei         50,00 lei. 
+ apa.curent.ser.TRȚ    5 m3 apă           100,00 lei. 
+ TOTAL ÎNTREȚINERE                        150,00 lei. 
+
+ comut.reglaj.ogl.EPS  1buc/113lei        113,00 lei. 
+ oglindă.retro.st.EPS  1buc/106lei        106,00 lei. 
+ oglindă.retro.dr.EPS  1buc/106lei        106,00 lei. 
+ TOTAL EPIESA.RO                          325,00 lei. 
+
+ TOTAL 20.10.2020                         325,00 lei. 
+-----------------                                            
+ total                                   2210,73 lei. 
                        cheltuieli : octombrie / 2020. 
 
- venituri:                               2299,00 lei. 
- cheltuieli:                             1178,85 lei. 
- venituri-cheltuieli:                    1120,15 lei. 
+ venituri:                               2799,00 lei. 
+ cheltuieli:                             2210,73 lei. 
+ venituri-cheltuieli:                     588,27 lei. 
