@@ -31,9 +31,81 @@
 
  TOTAL 08.12.2020                           9,70 lei. 
 -----------------                                            
- total                                    299,77 lei. 
+ rata.credit.BTR       139.31+47.95lei    187,26 lei. 
+ TOTAL BANCA TRANSILVANIA                 187,26 lei. 
+
+ TOTAL 10.12.2020                         187,26 lei. 
+-----------------                                            
+ suport.hâr.igien.DDM  1buc/30,71lei       30,71 lei. 
+ tocător.dreptung.DDM  1buc/8,90lei         8,90 lei. 
+ TOTAL DEDEMAN                             39,61 lei. 
+
+ sacoșă.maiou.LDL      1buc/0,69lei         0,69 lei. 
+ sacoșă.maiou.LDL      1buc/0,69lei         0,69 lei. 
+ cafea.Perfetto.LDL    1buc/9,99lei         9,99 lei. 
+ sem.negre.sărat.LDL   1buc/4,69lei         4,69 lei. 
+ sem.negre.sărat.LDL   1buc/4,69lei         4,69 lei. 
+ băutură.soc+lămâ.LDL  1buc/0,99lei         0,99 lei. 
+ pâine.neagr.rot.LDL   1buc/2,19lei         2,19 lei. 
+ pâine.neagr.rot.LDL   1buc/2,19lei         2,19 lei. 
+ set.perforare.LDL     1buc/19,99lei       19,99 lei. 
+ ceafă.porc.f.os.LDL   1kg/16,90lei        16,66 lei. 
+ portocale.plasă.LDL   1x2kg/8,99lei        8,99 lei. 
+ TOTAL LIDL                                71,76 lei. 
+
+ sacoșă.PNY            1buc/1,19lei         1,19 lei. 
+ semințe.dovleac.PNY   1buc/12,49lei       12,49 lei. 
+ lumânări.electri.PNY  1x2buc/3,43lei       3,43 lei. 
+ semințe.negre.să.PNY  1buc/4,69lei         4,69 lei. 
+ biscuiți.penny.PNY    1buc/1,39lei         1,39 lei. 
+ scobitori.PNY         1buc/1,45lei         1,45 lei. 
+ slănină.afumat.PNY    1BUC/8,99LEI         8,99 lei. 
+ TOTAL PENNY                               33,63 lei. 
+
+ stea.led.ventuză.PEP  1buc/5,99lei         5,99 lei. 
+ lumânări.pastile.PEP  1x100/9,99lei        9,99 lei. 
+ pungă.PEP             1buc/0,50lei         0,50 lei. 
+ TOTAL PEPCO                               16,48 lei. 
+
+ TOTAL 11.12.2020                         161,48 lei. 
+-----------------                                            
+ felix.fanta.plic.EDC  1plic/2,30lei        2,30 lei. 
+ felix.fanta.plic.EDC  1plic/2,30lei        2,30 lei. 
+ felix.fanta.plic.EDC  1plic/2,30lei        2,30 lei. 
+ felix.fanta.plic.EDC  1plic/2,30lei        2,30 lei. 
+ felix.fanta.plic.EDC  1plic/2,30lei        2,30 lei. 
+ mere.sac.EDC          1x4kg/9,90lei        9,90 lei. 
+ sacoșă.biodegr.EDC    1buc/0,65lei         0,65 lei. 
+ leber.EDC             1buc/3,30lei         3,30 lei. 
+ TOTAL EURO DISCOUNT                       25,35 lei. 
+
+ felix.fanta.plic.KLK  1plic/1,79           8,95 lei. 
+ felix.fanta.plic.KLK  1plic/1,79lei        1,79 lei. 
+ pulpe.pui.spate.KLK   1kg/5,49lei          7,83 lei. 
+ pulpe.pui.spate.KLK   1kg/5,49lei          7,80 lei. 
+ stergător.auto.KLK    1buc/9,99lei         9,99 lei. 
+ stergător.auto.KLK    1buc/9,99lei         9,99 lei. 
+ stergător.auto.KLK    1buc/9,99lei         9,99 lei. 
+ pungă.biodegrada.KLK  1buc/0,10lei         0,10 lei. 
+ TOTAL KAUFLAND                            56,44 lei. 
+
+ pâine.tavă.nefel.PIP  1buc/2,70lei         2,70 lei. 
+ pâine.tavă.nefel.PIP  1buc/2,70lei         2,70 lei. 
+ pâine.tavă.nefel.PIP  1buc/2,70lei         2,70 lei. 
+ TOTAL LA PIPA                              8,10 lei. 
+
+ felix.fanta.plic.PET  1plic/2,49lei        2,49 lei. 
+ felix.fanta.plic.PET  1plic/2,49lei        2,49 lei. 
+ felix.fanta.plic.PET  1plic/2,49lei        2,49 lei. 
+ felix.fanta.plic.PET  1plic/2,49lei        2,49 lei. 
+ felix.fanta.plic.PET  1plic/2,49lei        2,49 lei. 
+ TOTAL PET PRODUCT                         12,45 lei. 
+
+ TOTAL 12.12.2020                         102,34 lei. 
+-----------------                                            
+ total                                    750,85 lei. 
                        cheltuieli : decembrie / 2020. 
 
  venituri:                               2423,00 lei. 
- cheltuieli:                              299,77 lei. 
- venituri-cheltuieli:                    2123,23 lei. 
+ cheltuieli:                              750,85 lei. 
+ venituri-cheltuieli:                    1672,15 lei. 
