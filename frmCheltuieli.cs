@@ -326,7 +326,7 @@ namespace cheltuieli
 			string strcheltuieli="";
 			string sqlsel = "";
 			string wheresql1="";
-			string wheresql2="";
+			//string wheresql2="";
 			string groupby=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, cheltuieli.MAGAZIN";
 			string groupby2=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA";
 			string orderby=" ORDER BY LUNA, ZIUA, MAGAZIN, ORDINE;";
@@ -350,26 +350,27 @@ namespace cheltuieli
 				//Debug.Print(wheresql);
 						
 			}
-			wheresql2=" AND " + 
-							"cheltuieli.SEMN='-'";
+			//wheresql2=" AND " + 
+			//				"cheltuieli.SEMN='-'";
+			//wheresql2="";
 			
 			sqlsel="SELECT 0 AS ORDINE, ID, DENUMIRE, MAGAZIN, DESCRIERE, AN, LUNA, ZIUA, VALOARE, SEMN FROM cheltuieli";
 			sqlsel += wheresql1;
-			sqlsel += wheresql2;
+			//sqlsel += wheresql2;
 			//Debug.Print(sqlsel);
 			
 			sqlsel += " UNION ALL";
 			
-			sqlsel += " SELECT 1 AS ORDINE, '', 'TOTAL', MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.VALOARE),2), '' FROM cheltuieli";
+			sqlsel += " SELECT 1 AS ORDINE, '', 'TOTAL', MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2), '' FROM cheltuieli";
 			sqlsel += wheresql1;
-			sqlsel += wheresql2;
+			//sqlsel += wheresql2;
 			sqlsel += groupby;
 			
 			sqlsel += " UNION ALL";
 			
-			sqlsel += " SELECT 2 AS ORDINE, '', 'TOTAL', 'ZZZ' AS MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.VALOARE),2), '' FROM cheltuieli";
+			sqlsel += " SELECT 2 AS ORDINE, '', 'TOTAL', 'ZZZ' AS MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2), '' FROM cheltuieli";
 			sqlsel += wheresql1;
-			sqlsel += wheresql2;
+			//sqlsel += wheresql2;
 			sqlsel += groupby2;
 			
 			
@@ -392,7 +393,7 @@ namespace cheltuieli
 								if(Global.dr["denumire"].ToString()=="TOTAL"){
 									if(Global.dr["MAGAZIN"].ToString()=="ZZZ"){
 										strcheltuieli+= " " + ("TOTAL" + " " + Global.dr["ZIUA"].ToString().PadLeft(2,'0') + "." + Global.dr["LUNA"].ToString().PadLeft(2,'0')+"."+ Global.dr["AN"].ToString()).PadRight(37);
-										strcheltuieli+=string.Format("{0:0.00}", ( Global.dr["VALOARE"])).PadLeft(10)  + " lei. \r\n";
+										strcheltuieli+=string.Format("{0:0.00}", (Global.dr["VALOARE"])).PadLeft(10)  + " lei. \r\n";
 										strcheltuieli+="-----------------".PadRight(61)+ "\r\n";
 									}else{
 										strcheltuieli+= " " + ("TOTAL" + " " + Global.dr["MAGAZIN"].ToString()).PadRight(37);
@@ -419,9 +420,9 @@ namespace cheltuieli
 			
 			try{
 				
-				sqlsel = "SELECT ROUND(SUM(cheltuieli.valoare),2) as total FROM cheltuieli";
+				sqlsel = "SELECT ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2) as total FROM cheltuieli";
 				sqlsel += wheresql1;
-				sqlsel += wheresql2;
+				//sqlsel += wheresql2;
 				//Debug.Print(sqlsel);
 				
 				using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
@@ -454,10 +455,10 @@ namespace cheltuieli
 			decimal totalvenituridouble=0;
 			decimal totalcheltuielidouble=0;
 			try{
-				sqlsel="SELECT cheltuieli.SEMN, ROUND(SUM(cheltuieli.valoare),2) as total FROM cheltuieli";
+				sqlsel="SELECT cheltuieli.SEMN, ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2) as total FROM cheltuieli";
 				groupby=" GROUP BY cheltuieli.SEMN;";
-				wheresql2=" AND " + 
-							"cheltuieli.SEMN='+'";
+				//wheresql2=" AND " + 
+				//			"cheltuieli.SEMN='+'";
 				
 				
 				sqlsel += wheresql1;
@@ -482,7 +483,7 @@ namespace cheltuieli
 								}
 							}
 							//Debug.Print((totalvenituri-totalcheltuieli).ToString());
-							strcheltuieli+= " " + "venituri-cheltuieli:".PadRight(27) + (totalvenituridouble-totalcheltuielidouble).ToString("0.00").PadLeft(20) + " lei. \r\n";
+							strcheltuieli+= " " + "venituri-cheltuieli:".PadRight(27) + (totalvenituridouble+totalcheltuielidouble).ToString("0.00").PadLeft(20) + " lei. \r\n";
 							
 							Global.dr.Close();
 						}
@@ -873,8 +874,8 @@ namespace cheltuieli
 			}
 		}
 	void totalcheltuieli(){
-        	textExport.Text = makeemailbody("1") + nrzilerestplata.Text.PadLeft(52);
-        }
+        textExport.Text = makeemailbody("1") + nrzilerestplata.Text.PadLeft(52);
+    }
 	public void incarcalistbox(string strsql, string denumire, string activ){
 		int x = 0;
 		string strdenumiri;
