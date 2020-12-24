@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+    <query>
+        <![CDATA[SELECT * FROM lista WHERE lista.PERIOADA<>'6. ocazional']]>
+    </query>
+    <columns>
+        <column>
+            <displayName>ID</displayName>
+            <name>ID</name>
+            <table>lista</table>
+            <database></database>
+            <type>CHAR</type>
+        </column>
+        <column>
+            <displayName>PRIORITATE</displayName>
+            <name>PRIORITATE</name>
+            <table>lista</table>
+            <database></database>
+            <type>SMALLINT</type>
+        </column>
+        <column>
+            <displayName>DENUMIRE</displayName>
+            <name>DENUMIRE</name>
+            <table>lista</table>
+            <database></database>
+            <type>VARCHAR</type>
+        </column>
+        <column>
+            <displayName>MAGAZIN</displayName>
+            <name>MAGAZIN</name>
+            <table>lista</table>
+            <database></database>
+            <type>VARCHAR</type>
+        </column>
+        <column>
+            <displayName>SCURT</displayName>
+            <name>SCURT</name>
+            <table>lista</table>
+            <database></database>
+            <type>VARCHAR</type>
+        </column>
+        <column>
+            <displayName>DESCRIERE</displayName>
+            <name>DESCRIERE</name>
+            <table>lista</table>
+            <database></database>
+            <type>VARCHAR</type>
+        </column>
+        <column>
+            <displayName>VALOARE</displayName>
+            <name>VALOARE</name>
+            <table>lista</table>
+            <database></database>
+            <type>DECIMAL ()</type>
+        </column>
+        <column>
+            <displayName>NEVOIE</displayName>
+            <name>NEVOIE</name>
+            <table>lista</table>
+            <database></database>
+            <type>TINYINT</type>
+        </column>
+        <column>
+            <displayName>PERIOADA</displayName>
+            <name>PERIOADA</name>
+            <table>lista</table>
+            <database></database>
+            <type>VARCHAR</type>
+        </column>
+        <column>
+            <displayName>DATA</displayName>
+            <name>DATA</name>
+            <table>lista</table>
+            <database></database>
+            <type>DATE</type>
+        </column>
+        <column>
+            <displayName>ACTIV</displayName>
+            <name>ACTIV</name>
+            <table>lista</table>
+            <database></database>
+            <type>TINYINT</type>
+        </column>
+        <column>
+            <displayName>O</displayName>
+            <name>O</name>
+            <table>lista</table>
+            <database></database>
+            <type>CHAR</type>
+        </column>
+    </columns>
+    <rows>
+        <row>
+            <value column="0">30ADD48E-7676-11EA-8F09-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">hârtie.igi.aro.MTR</value>
+            <value column="3">METRO</value>
+            <value column="4">MTR</value>
+            <value column="5">1x40/14,28lei</value>
+            <value column="6">14.28</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">5269D645-766C-11EA-8F09-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">motorină.extr.PTR</value>
+            <value column="3">PETROM</value>
+            <value column="4">PTR</value>
+            <value column="5">1litru/4,97lei</value>
+            <value column="6">60.19</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">85352AE5-7D6C-11EA-ADEB-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">advoca.4-10.PAȚ</value>
+            <value column="3">PIAȚA MARE</value>
+            <value column="4">PAȚ</value>
+            <value column="5">1pipet/80lei</value>
+            <value column="6">84</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A2B00EFC-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">apa.curent.ser.TRȚ</value>
+            <value column="3">INTREȚINERE</value>
+            <value column="4"></value>
+            <value column="5">5 m3 apă</value>
+            <value column="6">95</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-08</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A2B6E06A-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">cabl.tv.inte.RDS</value>
+            <value column="3">RCS-RDS</value>
+            <value column="4">RDS</value>
+            <value column="5">FDB20 27071679</value>
+            <value column="6">61</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A2CA0AAB-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">balsam.rufe.CRF</value>
+            <value column="3">CARREFOUR</value>
+            <value column="4">CRF</value>
+            <value column="5">870ml/16,50lei</value>
+            <value column="6">16.5</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A322A60D-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">rata.credit.BTR</value>
+            <value column="3">BANCA TRANSILVANIA</value>
+            <value column="4">BTR</value>
+            <value column="5">139.31+47.95lei</value>
+            <value column="6">187.26</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-11</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A33593EF-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">abonment.tel.mob.RDS</value>
+            <value column="3">RCS-RDS</value>
+            <value column="4">RDS</value>
+            <value column="5">FDB20 27040746</value>
+            <value column="6">10</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A4030434-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">spăl.ext.auto.PTR</value>
+            <value column="3">PETROM</value>
+            <value column="4">PTR</value>
+            <value column="5">1buc/20,98lei+b</value>
+            <value column="6">25.98</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-04</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A5A1769F-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">pungi.sandwich.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/2,49lei</value>
+            <value column="6">2.49</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A652DEFC-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">bureți.bucătăt.EDC</value>
+            <value column="3">EURO DISCOUNT</value>
+            <value column="4">EDC</value>
+            <value column="5">1X3buc/5,5lei</value>
+            <value column="6">5.5</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A6ED2CA4-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">pastă.tomate.24%MERE</value>
+            <value column="3">MERE</value>
+            <value column="4">MRE</value>
+            <value column="5">1buc/3,74lei</value>
+            <value column="6">7.48</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-13</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A797CAD7-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">spinăr.spat.gât.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1kg/.2,99lei</value>
+            <value column="6">3.63</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A79E35F7-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">saci.menajer.35.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/1,99lei</value>
+            <value column="6">1.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A7CAA7A4-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">pudră.pt.cafea.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/2,59lei</value>
+            <value column="6">2.59</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A7D108BA-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">cafea.Perfetto.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/9,99lei</value>
+            <value column="6">9.99</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A7F6FBF9-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">apă.de.gură.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/5,69lei</value>
+            <value column="6">5.69</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-11-27</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A84F0AC5-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">pate.pisici.KLK</value>
+            <value column="3">KAUFLAND</value>
+            <value column="4">KLK</value>
+            <value column="5">1x100g/0,99lei</value>
+            <value column="6">8.91</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-04</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A8C7A790-74DF-11EA-B0D3-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">pastă.dinți.lac.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/14,99lei</value>
+            <value column="6">14.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-05</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">AAA59281-7676-11EA-8F09-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">nisip.pisi.aro.MTR</value>
+            <value column="3">METRO</value>
+            <value column="4">MTR</value>
+            <value column="5">1buc/5,94lei</value>
+            <value column="6">5.94</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">D3B7B88F-7A1D-11EA-A5E2-00FF013B0A26</value>
+            <value column="1">1</value>
+            <value column="2">rată.card.forte</value>
+            <value column="3">BANCA TRANSILVANIA</value>
+            <value column="4">BTR</value>
+            <value column="5">rată.card.forte</value>
+            <value column="6">259.33</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-05</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">5B61CCBF-5435-4773-A1C7-67EE349CF4D1</value>
+            <value column="1">1</value>
+            <value column="2">ouă.30.m.sol.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1X30/13,99</value>
+            <value column="6">13.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-04</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">FF016406-B27A-4E95-888C-6F5891C7EB45</value>
+            <value column="1">1</value>
+            <value column="2">pâine.fra.ne.n.PIP</value>
+            <value column="3">LA PIPA</value>
+            <value column="4">PIP</value>
+            <value column="5">1buc/1,90lei</value>
+            <value column="6">1.9</value>
+            <value column="7">0</value>
+            <value column="8">1. zi</value>
+            <value column="9">2020-10-01</value>
+            <value column="10">0</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">0E01382B-0DA1-4A60-BD45-9B903E381F51</value>
+            <value column="1">1</value>
+            <value column="2">10BTRL02801201A500</value>
+            <value column="3">SC CTCE SA</value>
+            <value column="4">CTE</value>
+            <value column="5">cont salarii</value>
+            <value column="6">2423</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-05</value>
+            <value column="10">1</value>
+            <value column="11">+</value>
+        </row>
+        <row>
+            <value column="0">3D723971-D86C-447C-8E2C-227C594BAE87</value>
+            <value column="1">1</value>
+            <value column="2">zahăr.mărgărita.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1kg/2,59lei</value>
+            <value column="6">2.59</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">1C6E0B5B-B826-4F32-A5E0-9734F2336132</value>
+            <value column="1">1</value>
+            <value column="2">ulei.class.KLK</value>
+            <value column="3">KAUFLAND</value>
+            <value column="4">KLK</value>
+            <value column="5">1l/3,89lei</value>
+            <value column="6">3.89</value>
+            <value column="7">1</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">718CE7C5-9DBA-4016-9CF2-4CE1F2B863E1</value>
+            <value column="1">1</value>
+            <value column="2">avans.CTE</value>
+            <value column="3">SC CTCE SA</value>
+            <value column="4">CTE</value>
+            <value column="5">avans.500lei</value>
+            <value column="6">500</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">+</value>
+        </row>
+        <row>
+            <value column="0">A0DB8820-AC25-4E72-AA6A-23052CA50259</value>
+            <value column="1">1</value>
+            <value column="2">sare.mare.iod.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/1,99lei</value>
+            <value column="6">1.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">9CBBD989-8562-4279-91E6-C46BEB545D5E</value>
+            <value column="1">1</value>
+            <value column="2">deter.vase.hill.MRE</value>
+            <value column="3">MERE</value>
+            <value column="4">MRE</value>
+            <value column="5">1buc/5,08lei</value>
+            <value column="6">5.08</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">EBE2983D-1A9C-4F0C-9876-0CF8AD352B94</value>
+            <value column="1">1</value>
+            <value column="2">calgon.praf.SPC</value>
+            <value column="3">SUPECO</value>
+            <value column="4">SPC</value>
+            <value column="5">1x500g/10,79lei</value>
+            <value column="6">10.79</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">AC79CCF2-33C5-436F-9522-B9902A8674BC</value>
+            <value column="1">1</value>
+            <value column="2">cartuș.aquapho.CRF</value>
+            <value column="3">CARREFOUR</value>
+            <value column="4">CRF</value>
+            <value column="5">1buc/36,90lei</value>
+            <value column="6">36.9</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">082F1D71-0C14-453E-A8A9-C9103D04D4B0</value>
+            <value column="1">1</value>
+            <value column="2">fond.reparații.TRȚ</value>
+            <value column="3">INTREȚINERE</value>
+            <value column="4">TRȚ</value>
+            <value column="5">1rată/50lei</value>
+            <value column="6">50</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">C8E8B91F-4B8E-4026-8608-8E6AAC9DD048</value>
+            <value column="1">1</value>
+            <value column="2">sac.Daewoo.RC-234R/2</value>
+            <value column="3">R/2</value>
+            <value column="4">R/2</value>
+            <value column="5">nu stiu</value>
+            <value column="6">50</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-08</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">4F05D991-AD34-47C1-8590-D9369AE78335</value>
+            <value column="1">1</value>
+            <value column="2">pulpe.pui.cu.os.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1kg/7,79lei</value>
+            <value column="6">12.28</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">6A4AEAB2-DA62-48B2-BB78-89FEE0C7C61D</value>
+            <value column="1">1</value>
+            <value column="2">RCA.pana.22.03.2021</value>
+            <value column="3">FIRMA ASIGURARI</value>
+            <value column="4">FAS</value>
+            <value column="5">1x6luni/250lei</value>
+            <value column="6">250</value>
+            <value column="7">0</value>
+            <value column="8">7. memento</value>
+            <value column="9">2021-03-22</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">EAF45ECB-6189-4D6E-B0E4-5AD9F9C82EA2</value>
+            <value column="1">1</value>
+            <value column="2">rovinieta.23.09.2020</value>
+            <value column="3">PETROM</value>
+            <value column="4">PTR</value>
+            <value column="5">12luni/135,6lei</value>
+            <value column="6">135.48</value>
+            <value column="7">0</value>
+            <value column="8">7. memento</value>
+            <value column="9">2021-09-23</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A7CD572C-B31A-45AF-A870-E31311A0CD64</value>
+            <value column="1">1</value>
+            <value column="2">spăl.maș.cu.fise.SPC</value>
+            <value column="3">SUPECO</value>
+            <value column="4">SPC</value>
+            <value column="5">1fisă/2,5lei</value>
+            <value column="6">10</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">287D1DB7-A860-49FA-A3B5-0101EDDF46D7</value>
+            <value column="1">1</value>
+            <value column="2">past.antipara.TOMY</value>
+            <value column="3">OMY</value>
+            <value column="4">OMY</value>
+            <value column="5">1buc/2,5lei</value>
+            <value column="6">2.5</value>
+            <value column="7">0</value>
+            <value column="8">7. memento</value>
+            <value column="9">2020-07-28</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">6F4DE79A-CA40-45D6-947B-E9A5178ADE3F</value>
+            <value column="1">1</value>
+            <value column="2">săpun.Protex.An.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/2,49lei</value>
+            <value column="6">2.49</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-08</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">C7CE860D-9277-475E-AA9E-3F599DA7394B</value>
+            <value column="1">1</value>
+            <value column="2">ceară.protectoar.DDM</value>
+            <value column="3">DEDEMAN</value>
+            <value column="4">DDM</value>
+            <value column="5">1buc/9,85lei</value>
+            <value column="6">9.85</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-17</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">7530EA42-6504-42E6-911F-F93A4F3CFB6E</value>
+            <value column="1">1</value>
+            <value column="2">șampon.elseve.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/15,99lei</value>
+            <value column="6">15.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-06</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">F1A637DC-CA78-4645-87D5-5E3B9B194054</value>
+            <value column="1">1</value>
+            <value column="2">unt.masă.65%.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1buc/5,99lei</value>
+            <value column="6">5.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-14</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">328256CC-C98A-4063-B65C-DBAEFF7B1D0D</value>
+            <value column="1">1</value>
+            <value column="2">pahare.350.DDM</value>
+            <value column="3">DEDEMAN</value>
+            <value column="4">DDM</value>
+            <value column="5">1X50buc/8,70lei</value>
+            <value column="6">8.7</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-13</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">7615F508-7699-4315-A57A-012AD4D1A308</value>
+            <value column="1">1</value>
+            <value column="2">pahare.120.DDM</value>
+            <value column="3">DEDEMAN</value>
+            <value column="4">DDM</value>
+            <value column="5">1X25buc/4,82lei</value>
+            <value column="6">4.82</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-13</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">CA39CCA0-AAD8-42A5-A9A1-4E61A908B71A</value>
+            <value column="1">1</value>
+            <value column="2">gilette.2.MTR</value>
+            <value column="3">METRO</value>
+            <value column="4">MTR</value>
+            <value column="5">1x5buc/7,38lei</value>
+            <value column="6">7.38</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">45660659-6A93-4EB5-8E7F-10017993D0B1</value>
+            <value column="1">1</value>
+            <value column="2">ficat.conge.1kg.MTR</value>
+            <value column="3">METRO</value>
+            <value column="4">MTR</value>
+            <value column="5">1x1kg/6,49lei</value>
+            <value column="6">6.49</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">C8FC887F-FCCF-428B-B1AA-240AD97252DA</value>
+            <value column="1">1</value>
+            <value column="2">trebuie.făcut.ITP</value>
+            <value column="3">ITP</value>
+            <value column="4">ITP</value>
+            <value column="5">1serv/150lei</value>
+            <value column="6">150</value>
+            <value column="7">0</value>
+            <value column="8">7. memento</value>
+            <value column="9">2021-11-12</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">8D1756F9-B1D0-4A14-8208-07C4B557426C</value>
+            <value column="1">1</value>
+            <value column="2">stroghold.5-10.c.PRT</value>
+            <value column="3">PETMART</value>
+            <value column="4">PRT</value>
+            <value column="5">1x3pi/133,02lei</value>
+            <value column="6">133.02</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">629E3610-FF68-4FD6-B2A1-F790BA1B4260</value>
+            <value column="1">1</value>
+            <value column="2">stroghold.pisică.PRT</value>
+            <value column="3">PETMART</value>
+            <value column="4">PRT</value>
+            <value column="5">1x3pi/134,33lei</value>
+            <value column="6">134.33</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">9356B563-AC07-493C-B43C-EB54D1C49F86</value>
+            <value column="1">1</value>
+            <value column="2">prosop.bucătărie.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1x4sul/5,89lei</value>
+            <value column="6">5.89</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">A7778EEA-99A5-4942-A067-FB90F39F8309</value>
+            <value column="1">1</value>
+            <value column="2">pipote.inimi.pui.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1x500g/5,99lei</value>
+            <value column="6">5.99</value>
+            <value column="7">0</value>
+            <value column="8">3. săptămână</value>
+            <value column="9">2020-12-18</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">FD93B6A4-BAC6-4F26-B9DA-F66471550D81</value>
+            <value column="1">1</value>
+            <value column="2">det.dero.100spăl.PNY</value>
+            <value column="3">PENNY</value>
+            <value column="4">PNY</value>
+            <value column="5">1buc/69,99lei</value>
+            <value column="6">69.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-07</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">8577D0BF-EE3F-486A-8634-64FF6FF17902</value>
+            <value column="1">1</value>
+            <value column="2">încăr.0753757937.ORG</value>
+            <value column="3">ORANGE</value>
+            <value column="4">ORG</value>
+            <value column="5">1incă/59,44lei</value>
+            <value column="6">59.44</value>
+            <value column="7">0</value>
+            <value column="8">7. memento</value>
+            <value column="9">2021-10-01</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">F64A3831-1E27-4B68-9D38-A21708E88E14</value>
+            <value column="1">1</value>
+            <value column="2">kefir.set.12x400.LDL</value>
+            <value column="3">LIDL</value>
+            <value column="4">LDL</value>
+            <value column="5">1set/28,68lei</value>
+            <value column="6">28.68</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-04</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+        <row>
+            <value column="0">9A8C7D00-889F-408B-9ACB-FCEA01DF66A9</value>
+            <value column="1">1</value>
+            <value column="2">lumânări.pastile.PEP</value>
+            <value column="3">PEPCO</value>
+            <value column="4">PEP</value>
+            <value column="5">1x100/9,99lei</value>
+            <value column="6">9.99</value>
+            <value column="7">0</value>
+            <value column="8">4. lună</value>
+            <value column="9">2020-12-11</value>
+            <value column="10">1</value>
+            <value column="11">-</value>
+        </row>
+</rows></results>

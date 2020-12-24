@@ -65,7 +65,12 @@ namespace cheltuieli
 		
 			nrzile();
 			incarcadatagrid();
-			cautaMagazin(gridactive.Rows[0].Cells[0].Value.ToString(),gridactive.Rows[0].Cells[1].Value.ToString());
+			if(gridactive.RowCount>0){
+				cautaMagazin(gridactive.Rows[0].Cells[0].Value.ToString(),gridactive.Rows[0].Cells[1].Value.ToString());
+			}else{
+				incarcalistbox("","","1");
+			}
+			
 			autocomplet();
 			
 			linkLabel1.Text=Global.zicheltuieli + "." + Global.lunacheltuieli + "." + Global.ancheltuieli;
@@ -326,7 +331,6 @@ namespace cheltuieli
 			string strcheltuieli="";
 			string sqlsel = "";
 			string wheresql1="";
-			//string wheresql2="";
 			string groupby=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, cheltuieli.MAGAZIN";
 			string groupby2=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA";
 			string orderby=" ORDER BY LUNA, ZIUA, MAGAZIN, ORDINE;";
@@ -340,48 +344,35 @@ namespace cheltuieli
 							" AND " + 
 								"cheltuieli.ZIUA<=5 " +
 							")";
-				//Debug.Print(wheresql);
 			} else if(int.Parse(DateTime.Now.Day.ToString())>5){
 				wheresql1=" WHERE "+ 
 							"cheltuieli.LUNA=" + DateTime.Now.Month.ToString() +
 						" AND " + 
 							"cheltuieli.ZIUA>5";
-						
-				//Debug.Print(wheresql);
-						
 			}
-			//wheresql2=" AND " + 
-			//				"cheltuieli.SEMN='-'";
-			//wheresql2="";
 			
 			sqlsel="SELECT 0 AS ORDINE, ID, DENUMIRE, MAGAZIN, DESCRIERE, AN, LUNA, ZIUA, VALOARE, SEMN FROM cheltuieli";
 			sqlsel += wheresql1;
-			//sqlsel += wheresql2;
-			//Debug.Print(sqlsel);
 			
 			sqlsel += " UNION ALL";
 			
 			sqlsel += " SELECT 1 AS ORDINE, '', 'TOTAL', MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2), '' FROM cheltuieli";
 			sqlsel += wheresql1;
-			//sqlsel += wheresql2;
 			sqlsel += groupby;
 			
 			sqlsel += " UNION ALL";
 			
 			sqlsel += " SELECT 2 AS ORDINE, '', 'TOTAL', 'ZZZ' AS MAGAZIN, '', cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2), '' FROM cheltuieli";
 			sqlsel += wheresql1;
-			//sqlsel += wheresql2;
 			sqlsel += groupby2;
 			
 			
 			sqlsel += orderby;
-			//Debug.Print(sqlsel);
 			
 			try{
 				using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 					using(Global.cmd=new SQLiteCommand()){
 						Global.cmd.Connection=Global.cnn;
-						//Debug.Print(sqlsel);
 						Global.cmd.CommandText=sqlsel;
 						using(Global.dr=Global.cmd.ExecuteReader()){
 							if(DateTime.Now.Day<=5){
@@ -405,7 +396,6 @@ namespace cheltuieli
 									strcheltuieli+= " " + Global.dr["DESCRIERE"].ToString().PadRight(15);
 									strcheltuieli+= string.Format("{0:0.00}", ( Global.dr["VALOARE"])).PadLeft(10)  + " lei. \r\n";  
 								}
-								//Debug.Print(strcheltuieli);
 							}
 							Global.dr.Close();
 						}
@@ -422,8 +412,6 @@ namespace cheltuieli
 				
 				sqlsel = "SELECT ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2) as total FROM cheltuieli";
 				sqlsel += wheresql1;
-				//sqlsel += wheresql2;
-				//Debug.Print(sqlsel);
 				
 				using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 					using(Global.cmd=new SQLiteCommand()){
@@ -457,13 +445,10 @@ namespace cheltuieli
 			try{
 				sqlsel="SELECT cheltuieli.SEMN, ROUND(SUM(cheltuieli.SEMN || cheltuieli.VALOARE),2) as total FROM cheltuieli";
 				groupby=" GROUP BY cheltuieli.SEMN;";
-				//wheresql2=" AND " + 
-				//			"cheltuieli.SEMN='+'";
 				
 				
 				sqlsel += wheresql1;
 				sqlsel += groupby;
-				//Debug.Print(sqlsel);
 				
 				using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 					using(Global.cmd=new SQLiteCommand()){
@@ -482,7 +467,6 @@ namespace cheltuieli
 									strcheltuieli+= " " + "cheltuieli:".ToString().PadRight(27) + totalcheltuielidouble.ToString("0.00").PadLeft(20) + " lei. \r\n";
 								}
 							}
-							//Debug.Print((totalvenituri-totalcheltuieli).ToString());
 							strcheltuieli+= " " + "venituri-cheltuieli:".PadRight(27) + (totalvenituridouble+totalcheltuielidouble).ToString("0.00").PadLeft(20) + " lei. \r\n";
 							
 							Global.dr.Close();
@@ -516,7 +500,6 @@ namespace cheltuieli
 		switch (lucru){
 				case "ADAUGARE":
 				uuid=System.Guid.NewGuid().ToString().ToUpper();
-				//Debug.Print(uuid);
 				if (radioButton1.Checked == true)
 				{
 					prioritate = 1;
@@ -642,7 +625,6 @@ namespace cheltuieli
 					"O = '" + button10.Text + "' " +
 							"WHERE " +
 					"ID = '" + iddenumire + "';";
-					Debug.Print(sqlupdate);
 				try{
 					using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 						using(Global.cmd=new SQLiteCommand()){
@@ -696,8 +678,6 @@ namespace cheltuieli
 			strsql+= "" + Global.zicheltuieli  + "" + ", ";
 			strsql+= "" + textpret.Text.Replace(",",".")   + "" + ", ";
 			strsql+= "'" + button10.Text   + "'" + ");";
-			Debug.Print(strsql);
-			//MessageBox.Show(strsql );
 			try{
 				using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 						using(Global.cmd=new SQLiteCommand()){
@@ -995,7 +975,6 @@ namespace cheltuieli
 						"lista.NEVOIE=1 AND " +
 						"lista.ACTIV=1 " +
 				"ORDER BY lista.PRIORITATE, lista.PERIOADA;";
-		//Debug.Print(strdenumiri);
            
 		gridactive.RowsDefaultCellStyle.BackColor = Color.White;
 		gridactive.AlternatingRowsDefaultCellStyle.BackColor = Color.WhiteSmoke;
@@ -1036,10 +1015,8 @@ namespace cheltuieli
         {
 		string strDenumireSel;
 		DateTime strDataSart;
-		//Debug.Print(listDenumiri.Text.Substring(2));
 		strDenumireSel = "SELECT lista.* from lista WHERE lista.DENUMIRE='" + listDenumiri.Text.Substring(2) + "';";
 		
-		//Debug.Print(strDenumireSel);
 		nrcitestedenumire=nrcitestedenumire+1;
 		
 		try{
@@ -1114,7 +1091,6 @@ namespace cheltuieli
 		//prioritate 1 perioadă zi
 		strreturn = prior + ".--------------------------------\r\n";
 		sqlsel = "SELECT lista.* FROM lista WHERE lista.PRIORITATE='" + prior + "' AND lista.NEVOIE=1 AND lista.ACTIV=1 AND lista.PERIOADA='1. zi';";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1139,7 +1115,6 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) as TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='1. zi';";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1171,7 +1146,6 @@ namespace cheltuieli
 		
 		//####################################  2. 3 zile  ##########################################
 		sqlsel = "SELECT lista.* FROM lista WHERE lista.PRIORITATE=1 AND lista.NEVOIE=1 AND lista.ACTIV=1 AND lista.PERIOADA='2. 3 zile';";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1196,7 +1170,6 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='2. 3 zile';";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1228,7 +1201,6 @@ namespace cheltuieli
 		//###########################################################################################
 		//####################################  7 zile  ##########################################
 		sqlsel = "SELECT lista.* FROM lista WHERE PERIOADA='3. săptămână' AND lista.PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1;";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1253,7 +1225,6 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE PRIORITATE='" + prior + "' AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='3. săptămână';";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1285,7 +1256,6 @@ namespace cheltuieli
 		//###########################################################################################
 		//####################################  30 zile  ############################################
 		sqlsel = "SELECT lista.* FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='4. lună' AND lista.ACTIV=1;";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1308,7 +1278,6 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='4. lună' AND lista.ACTIV=1;";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1337,7 +1306,6 @@ namespace cheltuieli
 		//###########################################################################################
 		//####################################  ocazional  ############################################
 		sqlsel = "SELECT lista.* FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='6. ocazional' AND lista.ACTIV=1;";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1360,7 +1328,6 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='6. ocazional' AND lista.ACTIV=1;";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1396,7 +1363,6 @@ namespace cheltuieli
 		//###########################################################################################
 		//####################################  perioadă an  ########################################
 		sqlsel = "SELECT lista.* FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='5. an' AND lista.ACTIV=1";
-		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1419,7 +1385,6 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) AS TOT FROM lista WHERE lista.PRIORITATE=" + prior + " AND lista.NEVOIE=1 AND lista.PERIOADA='5. an' AND lista.ACTIV=1;";
-		Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
