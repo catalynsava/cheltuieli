@@ -328,16 +328,25 @@ namespace cheltuieli
 		}
 	void Button9Click(object sender, EventArgs e)
 		{
+			int lunaVar=0;
+			if((DateTime.Now.Month-1)==0){
+				lunaVar=12;
+			}else{
+				lunaVar=DateTime.Now.Month-1;
+			}
+
 			string strcheltuieli="";
 			string sqlsel = "";
 			string wheresql1="";
 			string groupby=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, cheltuieli.MAGAZIN";
 			string groupby2=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA";
 			string orderby=" ORDER BY LUNA, ZIUA, MAGAZIN, ORDINE;";
+
+			
 			
 			if(int.Parse(DateTime.Now.Day.ToString())<=5){
 				wheresql1=" WHERE " + 
-							"cheltuieli.LUNA=" + (DateTime.Now.Month-1).ToString() +
+							"cheltuieli.LUNA=" + lunaVar.ToString() +
 						" OR " + "" +
 							"(" + "" +
 								"cheltuieli.LUNA=" + DateTime.Now.Month.ToString() +
