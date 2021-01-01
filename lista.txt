@@ -1,9 +1,4 @@
                        cheltuieli : decembrie / 2020. 
- motorină.efix.55.RPT  1litru/5,25lei      76,02 lei. 
- TOTAL ROM PETROM                         -76,02 lei. 
-
- TOTAL 01.01.2021                         -76,02 lei. 
------------------                                            
  felix.fanta.plic.KLK  1plic/1,79           8,95 lei. 
  gourmet.pate.KLK      1buc/2,65lei        10,60 lei. 
  pate.pisici.KLK       1x100g/0,99lei       0,99 lei. 
@@ -400,9 +395,17 @@
 
  TOTAL 31.12.2020                        -128,93 lei. 
 -----------------                                            
- total                                    132,18 lei. 
+ motorină.efix.55.RPT  1litru/5,25lei      76,02 lei. 
+ TOTAL ROM PETROM                         -76,02 lei. 
+
+ spăl.maș.cu.fise.SPC  1fisă/2,5lei        10,00 lei. 
+ TOTAL SUPECO                             -10,00 lei. 
+
+ TOTAL 01.01.2021                         -86,02 lei. 
+-----------------                                            
+ total                                    122,18 lei. 
                        cheltuieli : decembrie / 2020. 
 
  venituri:                               2943,36 lei. 
- cheltuieli:                            -2811,18 lei. 
- venituri-cheltuieli:                     132,18 lei. 
+ cheltuieli:                            -2821,18 lei. 
+ venituri-cheltuieli:                     122,18 lei. 

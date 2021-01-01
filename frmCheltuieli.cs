@@ -340,7 +340,7 @@ namespace cheltuieli
 			string wheresql1="";
 			string groupby=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA, cheltuieli.MAGAZIN";
 			string groupby2=" GROUP BY cheltuieli.AN, cheltuieli.LUNA, cheltuieli.ZIUA";
-			string orderby=" ORDER BY LUNA, ZIUA, MAGAZIN, ORDINE;";
+			string orderby=" ORDER BY AN, LUNA, ZIUA, MAGAZIN, ORDINE;";
 
 			
 			
