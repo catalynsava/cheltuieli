@@ -322,7 +322,7 @@ namespace cheltuieli
 			this.gridactive.ShowCellToolTips = false;
 			this.gridactive.ShowEditingIcon = false;
 			this.gridactive.ShowRowErrors = false;
-			this.gridactive.Size = new System.Drawing.Size(535, 700);
+			this.gridactive.Size = new System.Drawing.Size(560, 700);
 			this.gridactive.TabIndex = 20;
 			this.gridactive.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridactiveCellContentClick);
 			// 

@@ -1,0 +1,45 @@
+﻿
+săptămânale: 
+ pudră.pt.cafea.LDL     2,59 lei. lună:   12,95 lei. 
+ cafea.Perfetto.LDL     9,99 lei. lună:   49,95 lei. 
+ pipote.inimi.pui.LDL   5,99 lei. lună:   29,95 lei. 
+ gourmet.pate.pui.KLK   2,65 lei. lună:   13,25 lei. 
+ felix.fantas.pui.KLK  17,90 lei. lună:   89,50 lei. 
+ portocale.pl.2kg.LDL   5,79 lei. lună:   28,95 lei. 
+ total/săptămână       44,91 lei. lună:  224,55 lei. 
+lunare: 
+  hârtie.igi.aro.MTR    14,28 lei.
+  advoca.4-10.PAȚ       84,00 lei.
+  cabl.tv.inte.RDS      61,00 lei.
+  balsam.rufe.CRF       16,50 lei.
+  abonment.tel.mob.RDS  10,00 lei.
+  spăl.ext.auto.PTR     25,98 lei.
+  pungi.sandwich.LDL     2,49 lei.
+  bureți.bucătăt.EDC     5,50 lei.
+  saci.menajer.35.LDL    1,99 lei.
+  pate.pisici.klc.KLK    9,90 lei.
+  nisip.pisi.aro.MTR     5,94 lei.
+  rată.card.forte      259,33 lei.
+  ouă.30.m.sol.LDL      13,99 lei.
+  zahăr.mărgărita.LDL    2,59 lei.
+  ulei.class.KLK         3,89 lei.
+  avans.CTE            500,00 lei.
+  sare.mare.iod.LDL      1,99 lei.
+  deter.vase.hill.MRE    5,08 lei.
+  calgon.praf.SPC       10,79 lei.
+  cartuș.aquapho.CRF    36,90 lei.
+  fond.reparații.TRȚ    50,00 lei.
+  șampon.elseve.LDL     15,99 lei.
+  gilette.2.MTR          7,38 lei.
+  stroghold.5-10.c.PRT 133,02 lei.
+  stroghold.pisică.PRT 134,33 lei.
+  det.dero.100spăl.PNY  69,99 lei.
+  kefir.set.12x400.LDL  28,68 lei.
+  total/lună          1511,53 lei. 
+ocazional: 
+  total/ocazional        0,00 lei. 
+total lunar general: 
+                      1736,08 lei. 
+anuale: 
+  total                       lei. 
+                      30 zile până la rest de plată.

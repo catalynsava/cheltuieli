@@ -1100,6 +1100,7 @@ namespace cheltuieli
 		//prioritate 1 perioadă zi
 		strreturn = prior + ".--------------------------------\r\n";
 		sqlsel = "SELECT lista.* FROM lista WHERE lista.PRIORITATE='" + prior + "' AND lista.NEVOIE=1 AND lista.ACTIV=1 AND lista.PERIOADA='1. zi';";
+		Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
