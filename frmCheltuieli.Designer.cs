@@ -1,9 +1,9 @@
 namespace cheltuieli
 {
-    partial class frmCheltuieli
-    {
-    private System.ComponentModel.IContainer components = null;
-    private System.Windows.Forms.ListBox listDenumiri;
+	partial class frmCheltuieli
+	{
+	private System.ComponentModel.IContainer components = null;
+	private System.Windows.Forms.ListBox listDenumiri;
 	private System.Windows.Forms.TextBox textemail;
 	private System.Windows.Forms.DataGridView gridactive;
 	private System.Windows.Forms.DataGridViewTextBoxColumn denumire;
@@ -743,5 +743,5 @@ namespace cheltuieli
 			this.PerformLayout();
 
 		}
-    }
+	}
 }

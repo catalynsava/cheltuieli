@@ -1100,7 +1100,7 @@ namespace cheltuieli
 		//prioritate 1 perioadă zi
 		strreturn = prior + ".--------------------------------\r\n";
 		sqlsel = "SELECT lista.* FROM lista WHERE lista.PRIORITATE='" + prior + "' AND lista.NEVOIE=1 AND lista.ACTIV=1 AND lista.PERIOADA='1. zi';";
-		Debug.Print(sqlsel);
+		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1125,6 +1125,7 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) as TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='1. zi';";
+		Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
@@ -1422,10 +1423,11 @@ namespace cheltuieli
 		textperioada.AutoCompleteCustomSource.Add("1. zi");
 		textperioada.AutoCompleteCustomSource.Add("2. 3 zile");
 		textperioada.AutoCompleteCustomSource.Add("3. săptămână");
-		textperioada.AutoCompleteCustomSource.Add("4. lună");
-		textperioada.AutoCompleteCustomSource.Add("5. an");
-		textperioada.AutoCompleteCustomSource.Add("6. ocazional");
-		textperioada.AutoCompleteCustomSource.Add("7. memento");
+		textperioada.AutoCompleteCustomSource.Add("4. 2 săptămâni");
+		textperioada.AutoCompleteCustomSource.Add("5. lună");
+		textperioada.AutoCompleteCustomSource.Add("6. an");
+		textperioada.AutoCompleteCustomSource.Add("7. ocazional");
+		textperioada.AutoCompleteCustomSource.Add("8. memento");
 	}
 	void nrzile(){
 		string strsql="";
