@@ -1432,8 +1432,7 @@ namespace cheltuieli
 	void nrzile(){
 		string strsql="";
 		
-		DateTime azi;
-		azi = DateTime.Now;
+		DateTime azi=DateTime.Now;
 		bool azibool=false;
 		nrzileramase=0;
 

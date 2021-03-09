@@ -1,203 +1,75 @@
-                        cheltuieli : ianuarie / 2021. 
- 10BTRL02801201A500    cont salarii      2339,00 lei. 
- RO12BTRLRONTMEL0.CTE  bonuri.masă        241,63 lei. 
- TOTAL SC CTCE SA                        2580,63 lei. 
+                          cheltuieli : martie / 2021. 
+ rată.card.forte       rată.card.forte    254,66 lei. 
+ TOTAL BANCA TRANSILVANIA                -254,66 lei. 
 
- TOTAL 06.01.2021                        2580,63 lei. 
------------------                                            
- rată.card.forte       rată.card.forte    259,33 lei. 
- TOTAL BANCA TRANSILVANIA                -259,33 lei. 
+ W-40.șpray.200ml.DDM  1buc/15,12lei       15,12 lei. 
+ pânză.pend.HG13.DDM   1x2/6,37lei          6,37 lei. 
+ tav.pizza.29,5x2.DDM  1buc/9,98lei         9,98 lei. 
+ lighean.pătrat.DDM    1buc/9,38lei         9,38 lei. 
+ ferăstrău.vertic.DDM  1buc/109lei        109,00 lei. 
+ TOTAL DEDEMAN                           -149,85 lei. 
+
+ drojdie.pakhaya.EDC   1x25g/0,60lei        2,40 lei. 
+ bere.cutie.buceg.EDC  1x0,5l/2,10lei       8,40 lei. 
+ brânză.burduf.pa.EDC  1kg/21,90lei        13,36 lei. 
+ piept.pui.os.EDC      1kg/14,90lei         9,45 lei. 
+ pastramă.porc.af.EDC  1kg/43,90lei        10,10 lei. 
+ TOTAL EURO DISCOUNT                      -43,71 lei. 
+
+ mălai.extra.PNY       1buc/1,49lei        14,90 lei. 
+ făină.albă.PNY        1kg/1,69lei         16,90 lei. 
+ ficat.congel.1kg.PNY  1x1kg/7,99lei        7,99 lei. 
+ pipote.congelate.PNY  1x0,5kg/4,99lei      4,99 lei. 
+ ciolan.fără.os.PNY    1kg/22,90lei        15,59 lei. 
+ pui.qualiko.PNY       1buc/7,98lei         7,98 lei. 
+ discout.pui.qual.PNY  1x20%/1,60lei        1,60 lei. 
+ pudră.cafea.coff.PNY  1buc/3,19lei         3,19 lei. 
+ pudră.cafea.coff.PNY  1buc/3,19lei         3,19 lei. 
+ forneti.PNY           1buc/1,55lei         4,65 lei. 
+ portocale.2kg.PNY     1x2kg/7,49lei        7,49 lei. 
+ fairy.deter.vase.PNY  1buc/9,79lei         9,79 lei. 
+ TOTAL PENNY                              -95,06 lei. 
 
  cabl.tv.inte.RDS      FDB20 27071679      61,00 lei. 
  abonment.tel.mob.RDS  FDB20 27040746      10,00 lei. 
  TOTAL RCS-RDS                            -71,00 lei. 
 
- TOTAL 07.01.2021                        -330,33 lei. 
+ RO10BTRL02801201.CTE  cont salarii      2376,00 lei. 
+ TOTAL SC CTCE SA                        2376,00 lei. 
+
+ TOTAL 06.03.2021                        1761,72 lei. 
 -----------------                                            
- chiflă.kaiser.KLK     1x60g/0,35lei        1,05 lei. 
- felix.fantas.pui.KLK  1buc/1,79lei        17,90 lei. 
- piept.pui.dezosa.KLK  1kg/14,99lei        12,29 lei. 
- portocale.plasă.KLK   1buc/2,99lei         2,99 lei. 
- pulpă.porc.fă.os.KLK  1kg/13,99lei        16,66 lei. 
- TOTAL KAUFLAND                           -50,89 lei. 
+ capac.antistropi.CRF  1buc/9,99lei         9,99 lei. 
+ cafea.boab.Gr.Cl.CRF  1x1kg/15,99lei      15,99 lei. 
+ râșniță.ca.Bosch.CRF  1buc/119,90lei     119,90 lei. 
+ pate.ficat.pui20.CRF  1buc/2,95lei         2,95 lei. 
+ pate.ficat.pui20.CRF  1buc/2,95lei         2,95 lei. 
+ pate.ficat.pui20.CRF  1buc/2,95lei         2,95 lei. 
+ pate.ficat.pui20.CRF  1buc/2,95lei         2,95 lei. 
+ paie.flexibil.40.CRF  1set/5,49lei         5,49 lei. 
+ ruletă.2.metri.CRF    1buc/2,99lei         2,99 lei. 
+ aqua.vitamina.Ca.CRF  1buc/4,65lei         4,65 lei. 
+ TOTAL CARREFOUR                         -170,81 lei. 
 
- sacoșă.maiou.LDL      1buc/0,69lei         0,69 lei. 
- kefir.1,5grăsime.LDL  1x400g/2,39lei      14,34 lei. 
- pipote.inimi.pui.LDL  1x500g/5,99lei       5,99 lei. 
- balsam.doussy.LDL     1x3l/12,99lei       12,99 lei. 
- cartofi.albi.pla.LDL  1x5kg/4,49lei        4,49 lei. 
- săpun.Protex.An.LDL   1buc/2,49lei         2,49 lei. 
- semiprelată.auto.LDL  1buc/29,99lei       29,99 lei. 
- TOTAL LIDL                               -70,98 lei. 
+ pungă+ecotaxa.PEP     1buc/0,5lei          0,50 lei. 
+ cârpe.bucătărie.PEP   1x3buc/9,99lei       9,99 lei. 
+ cârpe.bucătărie.PEP   1x3buc/9,99lei       9,99 lei. 
+ carafă.ceai.PEP       1buc/14,99lei       14,99 lei. 
+ TOTAL PEPCO                              -35,47 lei. 
 
- lichid.parbriz.PNY    1x4l/17,99lei       17,99 lei. 
- dis.lichid.parbr.PNY  1discount/3lei       3,00 lei. 
- hrană.pisici.ume.PNY  1x4plic/4,29lei      4,29 lei. 
- hrană.pisici.ume.PNY  1x4plic/4,29lei      4,29 lei. 
- orez.bob.rotund.PNY   1kg/4,19lei          4,19 lei. 
- pate.edel.cate.PNY    1buc/0,99lei         0,99 lei. 
- pate.edel.cate.PNY    1buc/0,99lei         0,99 lei. 
- pate.edel.cate.PNY    1buc/0,99lei         0,99 lei. 
- pate.edel.cate.PNY    1buc/0,99lei         0,99 lei. 
- pate.edel.cate.PNY    1buc/0,99lei         0,99 lei. 
- legume.mixt.supă.PNY  1buc/3,99lei         3,99 lei. 
- sacoșă.PNY            1buc/1,19lei         1,19 lei. 
- TOTAL PENNY                              -37,89 lei. 
+ lopățică.paletă.PPR   1buc/4,29lei         4,29 lei. 
+ lopățică.paletă.PPR   1buc/4,29lei         4,29 lei. 
+ TOTAL PET PRODUCT                         -8,58 lei. 
 
- TOTAL 09.01.2021                        -159,76 lei. 
+ felix.fantas.pli.PRF  1plic/1,69lei       16,90 lei. 
+ pateu.pisi.profi.PRF  1buc/0,99lei         4,95 lei. 
+ TOTAL Profi Supermarket                  -21,85 lei. 
+
+ TOTAL 07.03.2021                        -236,71 lei. 
 -----------------                                            
- sacoșă.PNY            1buc/1,19lei         1,19 lei. 
- lapte.proaspăt.PNY    1l/2,89lei           2,89 lei. 
- lapte.proaspăt.PNY    1l/2,89lei           2,89 lei. 
- pui.qualiko.PNY       1buc/8,78lei         8,78 lei. 
- parizer.porc.PNY      1kg/5,69lei          5,69 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- pâine.franzelă.a.PNY  1buc/2,49lei         2,49 lei. 
- pâine.franzelă.a.PNY  1buc/1,39lei         1,39 lei. 
- TOTAL PENNY                              -30,27 lei. 
+ total                                   1525,01 lei. 
+                          cheltuieli : martie / 2021. 
 
- 4borcane.set.PEP      1set/4,99lei         4,99 lei. 
- castron.plas.mic.PEP  1buc/3,99lei         3,99 lei. 
- castron.plas.mic.PEP  1buc/3,99lei         3,99 lei. 
- TOTAL PEPCO                              -12,97 lei. 
-
- TOTAL 10.01.2021                         -43,24 lei. 
------------------                                            
- rata.credit.BTR       139.31+47.95lei    187,26 lei. 
- TOTAL BANCA TRANSILVANIA                -187,26 lei. 
-
- TOTAL 11.01.2021                        -187,26 lei. 
------------------                                            
- portocale.pl.3kg.LDL  1x3kg/7,99lei        7,99 lei. 
- portocale.pl.2kg.LDL  1buc/6,99lei         6,99 lei. 
- sprite.băut.răco.LDL  1x0.5l/2,79lei       2,79 lei. 
- foarfeci.3.bucăț.LDL  1set/11,99lei       11,99 lei. 
- pudră.pt.cafea.LDL    1buc/2,59lei         2,59 lei. 
- pudră.pt.cafea.LDL    1buc/2,59lei         2,59 lei. 
- făină.integrală.LDL   1kg/1,99lei          1,99 lei. 
- făină.integrală.LDL   1kg/1,99lei          1,99 lei. 
- tavă.copt.LDL         1buc/16,99lei       16,99 lei. 
- croisant.cacao.LDL    1buc/0,99lei         0,99 lei. 
- croisant.cacao.LDL    1buc/0,99lei         0,99 lei. 
- croisant.cacao.LDL    1buc/0,99lei         0,99 lei. 
- TOTAL LIDL                               -58,88 lei. 
-
- TOTAL 12.01.2021                         -58,88 lei. 
------------------                                            
- avans.CTE             avans.500lei       500,00 lei. 
- TOTAL SC CTCE SA                         500,00 lei. 
-
- TOTAL 15.01.2021                         500,00 lei. 
------------------                                            
- sacoșă.maieu.CRF      1buc/1,19lei         1,19 lei. 
- sacoșă.maieu.CRF      1buc/1,19lei         1,19 lei. 
- oase.garf.afumat.CRF  1kg/10,99lei        18,39 lei. 
- portocale.plasă.CRF   1x3kg/7,49lei        7,49 lei. 
- hârtie.copt.8m.CRF    1buc/3,49lei         3,49 lei. 
- hârtie.copt.8m.CRF    1buc/3,49lei         3,49 lei. 
- aluat.foietaj.CRF     1x800g/3,99lei       3,99 lei. 
- felix.set4plicur.CRF  1set/9lei            9,00 lei. 
- felix.set4plicur.CRF  1set/9lei            9,00 lei. 
- tăiței.cuiburi.CRF    1x200g/2,42lei       2,42 lei. 
- turte.casă.lucia.CRF  1x4/4,59lei          4,59 lei. 
- TOTAL CARREFOUR                          -64,24 lei. 
-
- adezivpoly.max.b.DDM  1buc/20lei          20,00 lei. 
- TOTAL DEDEMAN                            -20,00 lei. 
-
- oase.vită.ciorbă.EXC  1kg/2lei             3,73 lei. 
- TOTAL EXPO CARM SRL                       -3,73 lei. 
-
- ardei.capia.roșu.PNY  1kg/6,26lei          3,08 lei. 
- cartofi.albi.vra.PNY  1kg/1,09lei          3,21 lei. 
- ceapă.galbenă.vr.PNY  1kg/1,59lei          1,61 lei. 
- sacoșă.PNY            1buc/1,19lei         1,19 lei. 
- sacoșă.PNY            1buc/1,19lei         1,19 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- hrană.plic.pisic.PNY  1plic/0,99lei        0,99 lei. 
- pui.qualiko.PNY       1buc/8,78lei         8,78 lei. 
- TOTAL PENNY                              -24,01 lei. 
-
- legume.ciorbă.PȚM     1buc/10lei          10,50 lei. 
- ouă.izvoare.PȚM       1ou/0,60lei          6,00 lei. 
- rasol.vițel.PȚM       10                  12,00 lei. 
- brânză.burduf.PȚM     10lei               10,00 lei. 
- TOTAL PIAȚA MARE                         -38,50 lei. 
-
- TOTAL 16.01.2021                        -150,48 lei. 
------------------                                            
- felix.fantas.pui.KLK  1buc/1,79lei        17,90 lei. 
- pungă.hârtie.KLK      1buc/1,19lei         1,19 lei. 
- pungă.bio.KLK         1buc/0,10lei         0,10 lei. 
- pungă.bio.KLK         1buc/0,10lei         0,10 lei. 
- lichid.parbr.-40.KLK  1buc/12,99lei       12,99 lei. 
- pui.grill.pungă.KLK   1kg/5,79lei          7,73 lei. 
- TOTAL KAUFLAND                           -40,01 lei. 
-
- TOTAL 17.01.2021                         -40,01 lei. 
------------------                                            
- pâine.rot.n.unop.EDC  1buc/1,55lei         1,55 lei. 
- ceai.urzică.fare.EDC  1cutie/3,20lei       3,20 lei. 
- ouă.caserola.10.EDC   1x10ouă/5,85lei      5,85 lei. 
- halva.cacao.vani.EDC  1kg/10,90lei         9,07 lei. 
- pulpe.pui.făr.os.EDC  1kg/16,90lei         8,31 lei. 
- brânză.burduf.pa.EDC  1kg/21,90lei        14,67 lei. 
- pâine.rot.n.unop.EDC  1buc/1,55lei         1,55 lei. 
- TOTAL EURO DISCOUNT                      -44,20 lei. 
-
- TOTAL 21.01.2021                         -44,20 lei. 
------------------                                            
- capac.antistropi.CRF  1buc/7,99lei         7,99 lei. 
- capac.antistropi.CRF  1buc/7,99lei         7,99 lei. 
- litieră.cap.CRF       1buc/46,90lei       46,90 lei. 
- felix.plic.aspic.CRF  1plic/2,25lei        2,25 lei. 
- felix.plic.aspic.CRF  1plic/2,25lei        2,25 lei. 
- felix.plic.aspic.CRF  1plic/2,25lei        2,25 lei. 
- felix.plic.aspic.CRF  1plic/2,25lei        2,25 lei. 
- felix.plic.aspic.CRF  1plic/2,25lei        2,25 lei. 
- cartofi.roșii.vr.CRF  1kg/1,59lei          3,65 lei. 
- pungă.barieră.CRF     1buc/0,10lei         0,10 lei. 
- fasole.albă.mare.CRF  1kg/8,79lei         11,74 lei. 
- pungă.barieră.CRF     1buc/0,10lei         0,10 lei. 
- TOTAL CARREFOUR                          -89,72 lei. 
-
- foarfeci.3.bucăț.LDL  1set/11,99lei       11,99 lei. 
- sacoșă.maiou.LDL      1buc/0,69lei         0,69 lei. 
- sacoșă.maiou.LDL      1buc/0,69lei         0,69 lei. 
- kefir.1,5grăsime.LDL  1x400g/2,39lei       7,17 lei. 
- făină.integrală.LDL   1kg/1,99lei          1,99 lei. 
- făină.integrală.LDL   1kg/1,99lei          1,99 lei. 
- făină.integrală.LDL   1kg/1,99lei          1,99 lei. 
- portocale.pl.3kg.LDL  1x3kg/9,99lei        9,99 lei. 
- burete.sârmă.LDL      1x3/2,89lei          2,89 lei. 
- TOTAL LIDL                               -39,39 lei. 
-
- slănină.afumată.PNY   1x500g/8,99lei       8,99 lei. 
- lipie.turcească.PNY   1buc/4,99lei         4,99 lei. 
- igienizant.mâini.PNY  1buc/19,65lei       19,65 lei. 
- TOTAL PENNY                              -33,63 lei. 
-
- foi.dafin.galeo.SPC   1x4g/1,29lei         1,29 lei. 
- foi.dafin.galeo.SPC   1x4g/1,29lei         1,29 lei. 
- ghimbir.SPC           1kg/19,10lei         2,59 lei. 
- pungă.barieră.SPC     1buc/0,10lei         0,10 lei. 
- ceai.colesterol.SPC   1buc/5,15lei         5,15 lei. 
- ceai.verde.vedda.SPC  1x100g/4,49lei       4,49 lei. 
- discount.foi.daf.SPC  1dis/0,06lei         0,13 lei. 
- TOTAL SUPECO                             -14,78 lei. 
-
- TOTAL 23.01.2021                        -177,52 lei. 
------------------                                            
- total                                   1888,95 lei. 
-                        cheltuieli : ianuarie / 2021. 
-
- venituri:                               3083,76 lei. 
- cheltuieli:                            -1194,81 lei. 
- venituri-cheltuieli:                    1888,95 lei. 
+ venituri:                               2377,60 lei. 
+ cheltuieli:                             -852,59 lei. 
+ venituri-cheltuieli:                    1525,01 lei. 
