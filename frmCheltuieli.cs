@@ -1125,7 +1125,7 @@ namespace cheltuieli
 		}
 		
 		sqlsel = "SELECT ROUND(SUM(VALOARE),2) as TOT FROM lista WHERE PRIORITATE=" + prior + " AND NEVOIE=1 AND ACTIV=1 AND PERIOADA='1. zi';";
-		Debug.Print(sqlsel);
+		//Debug.Print(sqlsel);
 		try{
 			using(Global.tranzactie=Global.cnn.BeginTransaction(IsolationLevel.Serializable)){
 				using(Global.cmd=new SQLiteCommand()){
